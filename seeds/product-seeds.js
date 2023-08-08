@@ -1,4 +1,4 @@
-const { Product } = require('../../fantastic-umbrella/Develop/models');
+const { Product } = require('../models');
 
 const productData = [
   {
