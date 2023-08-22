@@ -6,35 +6,25 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // GET all products
 router.get('/', async (req, res) => {
   try {
-    const productsData = await Product.findAll();
-    res.status(200).json(productsData);
+    // find all products and include its associated Category and Tag data
+    const products = await Product.findAll({
+      include: [
+        {
+          model: Category,
+          attributes: ['id', 'category_name'],
+        },
+        {
+          model: Tag,
+          attributes: ['id', 'tag_name'],
+        },
+      ],
+    });
+
+    res.status(200).json(products);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
-// GET all products
-// router.get('/', async (req, res) => {
-//   try {
-//     // find all products and include its associated Category and Tag data
-//     const products = await Product.findAll({
-//       include: [
-//         {
-//           model: Category,
-//           attributes: ['id', 'category_name'],
-//         },
-//         {
-//           model: Tag,
-//           attributes: ['id', 'tag_name'],
-//         },
-//       ],
-//     });
-
-//     res.status(200).json(products);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 // GET one product
 router.get('/:id', async (req, res) => {
