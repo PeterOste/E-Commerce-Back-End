@@ -20,5 +20,8 @@ This is a backend application for an E-Commerce website. It provides API endpoin
 1. Run the following command to create the database and seed it with test data: `npm run seed`
 2. Start the application: `npm start`
 
+## Demo
+https://drive.google.com/file/d/192fJHRUSwHyavOZGKuj6UKiqRxTT3AoZ/view
+
 # License
 This project was licensed under the MIT License.
