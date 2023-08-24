@@ -15,6 +15,7 @@ This is a backend application for an E-Commerce website. It provides API endpoin
 1. Create a `.env` file in the root directory of the project.
 2. Add your database configuration details to the `.env` file.
 3. Ensure that your MySQL server is running.
+4. Run the following command in MySQL: `SOURCE ./db/schema.sql`
 
 ## Usage
 1. Run the following command to create the database and seed it with test data: `npm run seed`
