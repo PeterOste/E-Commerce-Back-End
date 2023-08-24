@@ -16,14 +16,14 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Product', // Must be capital?
+        model: 'product',
         key: 'id',
       },
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Tag', // Must be capital?
+        model: 'tag',
         key: 'id',
       },
     },
