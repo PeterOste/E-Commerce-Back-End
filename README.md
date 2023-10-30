@@ -22,7 +22,7 @@ This is a backend application for an E-Commerce website. It provides API endpoin
 2. Start the application: `npm start`
 
 ## Demo
-https://drive.google.com/file/d/192fJHRUSwHyavOZGKuj6UKiqRxTT3AoZ/view
+[Link](https://drive.google.com/uc?export=download&id=192fJHRUSwHyavOZGKuj6UKiqRxTT3AoZ)
 
 # License
 This project was licensed under the MIT License.
